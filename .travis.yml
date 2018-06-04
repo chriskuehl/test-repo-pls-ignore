@@ -1,0 +1,15 @@
+addons:
+    artifacts: true
+    target_paths:
+        - /${TRAVIS_REPO_SLUG}/${TRAVIS_BUILD_NUMBER}/${TRAVIS_JOB_NUMBER}
+    paths:
+        - somefile
+        - somefile2
+        - somefile3
+
+install: /bin/true
+
+script:
+    - echo hello > somefile
+    - echo hello2 > somefile2
+    - echo hello3 > somefile3
